@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderQuiz Adventures - Menu</title>
+    <!--  font awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/menu.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="avatar-container">
+                <img id="selectedAvatarImg" src="" alt="Selected Avatar" class="avatar-image">
+                <p class="welcome-message">Welcome, <span id="displayUsername"></span>!</p>
+            </div>
+            <button class="logout-btn" onclick="window.location.href='index.html'">Logout</button>
+        </div>
+        <h1>WonderQuiz Adventures</h1>
+        <div id="dateDiv1" class="date"></div>
+    </header>
+  
+<!--  -->
+
+
+
+
+
+
+    <div class="parallax">
+
+    </div>
+
+    <div class="main">
+        <!-- math -->
+        <div class="menu-container">
+            <div class="multiple-buttons">
+                <a href="quiz.html?category=math"><i class="fa-solid fa-calculator fa-shake fa-xl"
+                        style="color: #19a77c;"></i>Math
+                </a>
+
+                <button type="button" class="menu-btn">
+                    <span class="plus-icon-btn"><i class="fa-light fa-plus"></i></span>
+                    <span class="minus-icon-btn"><i class="fas fa-minus minus-icon"></i></span>
+                </button>
+            </div>
+
+            <div class="menu-content show-text">
+                <p>Welcome to the Math Challenge! Test your skills with fun and educational questions. Let's see how
+                    many you can solve correctly! Good luck!</p>
+            </div>
+
+        </div>
+        <!-- english -->
+        <div class="menu-container">
+            <div class="multiple-buttons">
+                <a href="quiz.html?category=english">
+                    <i class="fa-solid fa-book fa-flip fa-lg" style="color: #FFD43B;"></i>
+                    English</a>
+
+                <button type="button" class="menu-btn">
+                    <span class="plus-icon-btn"><i class="fa-light fa-plus"></i></span>
+                    <span class="minus-icon-btn"><i class="fas fa-minus minus-icon"></i></span>
+                </button>
+            </div>
+
+            <div class="menu-content show-text">
+                <p>Welcome to the English Quiz! Explore your language skills with engaging and educational questions.
+                    Let's see how many you can answer correctly! Good luck!</p>
+            </div>
+        </div>
+
+
+        <!--  Health and Wellbeing-->
+        <div class="menu-container">
+            <div class="multiple-buttons">
+                <a href="quiz.html?category=health">
+
+                    <i class="fa-solid fa-heart-pulse fa-beat fa-lg" style="color: #e22c2c;"></i>
+                    Health</a>
+
+                <button type="button" class="menu-btn">
+                    <span class="plus-icon-btn"><i class="fa-light fa-plus"></i></span>
+                    <span class="minus-icon-btn"><i class="fas fa-minus minus-icon"></i></span>
+                </button>
+            </div>
+
+            <div class="menu-content show-text">
+                <p>Welcome to the Health and Wellbeing Quiz! Let's journey together through fun questions about staying
+                    healthy and feeling good.Good luck, young health explorer!</p>
+            </div>
+        </div>
+
+
+        <!--Scottish History  -->
+
+        <div class="menu-container">
+            <div class="multiple-buttons">
+                <a href="quiz.html?category=history">
+                    <i class="fa-solid fa-landmark fa-fade fa-lg" style="color: #4b413b;"></i>
+                    History</a>
+
+                <button type="button" class="menu-btn">
+                    <span class="plus-icon-btn"><i class="fa-light fa-plus"></i></span>
+                    <span class="minus-icon-btn"><i class="fas fa-minus minus-icon"></i></span>
+                </button>
+            </div>
+
+            <div class="menu-content show-text">
+                <p>Welcome to the Scottish History Quiz! Explore Scotland's past with fun questions. Let's test your knowledge! Good luck!</p>
+            </div>
+        </div>
+        <!-- Social Awareness  -->
+        
+        <div class="menu-container">
+            <div class="multiple-buttons">
+                <a href="quiz.html?category=social">
+                    <i class="fa-solid fa-handshake fa-bounce fa-lg" style="color: #12609c;"></i>
+                 Social</a>
+
+                <button type="button" class="menu-btn">
+                    <span class="plus-icon-btn"><i class="fa-light fa-plus"></i></span>
+                    <span class="minus-icon-btn"><i class="fas fa-minus minus-icon"></i></span>
+                </button>
+            </div>
+
+            <div class="menu-content show-text">
+                <p>Welcome to the Social Awareness Quiz! Learn about important issues with easy, fun questions. Let's see how much you know! Good luck!</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/dropdownMenu.js"></script>
+
+
+</body>
+
+</html>

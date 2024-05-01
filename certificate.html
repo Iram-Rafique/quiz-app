@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <!--  font awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/certificate.css">
+    <style>
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+
+            .certificate,
+            .certificate * {
+                visibility: visible;
+            }
+
+            .certificate {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="avatar-container">
+                <img id="selectedAvatarImg" src="" alt="Selected Avatar" class="avatar-image">
+                <p class="welcome-message">Welcome, <span id="displayUsername"></span>!</p>
+            </div>
+
+            <button class="logout-btn" onclick="window.location.href='index.html'">Logout</button>
+        </div>
+        <h1>WonderQuiz Adventures</h1>
+        <div id="dateDiv1" class="date"></div>
+    </header>
+
+    <div class="certificate">
+        <div id="certificate" class="certificateItems">
+             <!-- star -->
+             <span class="star">&#9733;</span></p>
+            <h2>Certificate of Achievement</h2>
+            <p>This is to certify that</p>
+            <p class="displayUsernameBody"><span id="displayUsername"></span>!</p>
+            <p>has successfully completed the Kids Program</p>
+            <p class="kids-program">Congratulations!
+            <h3>WonderQuiz Adventures</h3>
+            <div id="dateDiv2" class="date">h</div>
+
+        </div>
+
+    </div>
+    <div class="certificateBtnContainer">
+        <div class="certificateButtons">
+            <button class="printbtn" id="printButton" onclick="window.print()">Print</button>
+            <button class="exitbtn" onclick="window.location.href='menu.html'">Exit</button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/date.js"></script>
+
+
+</body>
+
+</html>

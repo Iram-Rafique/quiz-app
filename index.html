@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WonderQuiz Adventures</title>
+
+  <!-- font awesome library link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!--  -->
+
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!--  -->
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!-- <body onload="clearInput()"> -->
+  <header class="header">
+    <h1>WonderQuiz Adventures</h1>
+    <div id="dateDiv1" class="date"></div>
+  </header>
+  <!-- instructions  -->
+  <!-- <div class="instructionContainer">
+  <div class="instructionItems">
+    <h2>Welcome to WonderQuiz Adventures!</h2>
+    <h3>Getting Started</h3>
+ 
+    <ul>
+      <li>Provide your username</li>
+      <li>Enter your email address</li>
+      <li>Select an avatar</li>
+      <li>Click to access the menu page</li>
+    </ul>
+  </div>
+</div> -->
+  <!-- login -->
+
+
+  <div class="loginContainer">
+    <div class="bulletWrap">
+      <input type="text" id="username1" placeholder="Enter username">
+      <i class="fas fa-pencil"></i>
+    </div>
+
+    <div class="bulletWrap">
+      <input type="text" id="mail" name="mail" placeholder="Enter your Email">
+      <i class="fas fa-pencil"></i>
+
+    </div>
+    <div class="error" id="emailError"></div>
+    <!-- avatar -->
+    <h3>Choose an Avatar</h3>
+
+    <div class="avatarWrap">
+      <label class="avatar">
+        <input class="radioInput" type="radio" name="avatar" value="duck" id="duck" />
+        <img class="avatarSVG" src="icons/duck.svg" alt="duck avatar" />
+      </label>
+      <label class="avatar">
+        <input class="radioInput" type="radio" name="avatar" value="frog" id="frog" />
+        <img class="avatarSVG" src="icons/frog.svg" alt="frog avatar" />
+      </label>
+      <label class="avatar">
+        <input type="radio" class="radioInput" name="avatar" value="monkey" id="monkey" />
+        <img class="avatarSVG" src="icons/monkey.svg" alt="monkey avatar" />
+      </label>
+    </div>
+    <!-- validate login -->
+    <button onclick="validate()">Submit</button>
+
+  </div>
+
+
+
+  <!-- js -->
+  <script src="js/index.js"></script>
+  <script src="js/date.js"></script>
+</body>
+
+</html>

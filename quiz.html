@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>WonderQuiz Adventures -Quiz</title>
+    <!--  font awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!--  -->
+    <!-- js chart cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/quiz.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="avatar-container">
+                <img id="selectedAvatarImg" src="" alt="Selected Avatar" class="avatar-image">
+                <p class="welcome-message">Welcome, <span id="displayUsername"></span>!</p>
+            </div>
+            <button class="logout-btn" onclick="window.location.href='index.html'">Logout</button>
+        </div>
+        <h1>WonderQuiz Adventures</h1>
+        <div id="dateDiv1" class="date"></div>
+    </header>
+
+    <!-- main -->
+    <main class="quiz-container">
+        <div class="progress" id="progress-bar">
+            <div class="fill-bar" id="fill"></div>
+            <div class="text-bar" id="text"></div>
+        </div>
+
+        <h1 id="quiz-title"></h1>
+        <div id="question"></div>
+        <div class="quiz-options " id="options">
+
+
+        </div>
+
+        <button class="next-btn" onclick="showNextQuestion()">Next</button>
+
+    </main>
+    <div class="result-container">
+        <div id="score"></div>
+        <canvas id="scoreChart" width="300" height="200"></canvas>
+        <!-- Button for viewing certificate and exit-->
+    </div class=btnContainer>
+    <div class="btnItems">
+        <button calss="certificateBtn" onclick="window.location.href='certificate.html'" id="viewCertificateBtn"
+            style="display: none;">View Certificate</button>
+        <button id="exitBtn" onclick="window.location.href='menu.html'">Exit</button>
+    </div>
+    </div>
+
+
+    <!--  -->
+
+    <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/date.js"></script>
+
+    <script src="js/quiz.js"></script>
+
+
+
+
+
+</body>
+
+</html>
